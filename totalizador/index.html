@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="./src/styles/style.css">
+</head>  
+<body>
+    <h1>totalizador by Gabriel Balderrama</h1>
+
+    <h2>Impuestos por estado</h2>
+
+    <div class="row">
+      <div class="column">
+    <table>
+      <tr>
+        <th>Estado</th>
+        <th>Impuesto</th>
+      </tr>
+      <tr>
+        <td>CA</td>
+        <td>8.25%</td>
+      </tr>
+      <tr>
+        <td>TX</td>
+        <td>6.25%</td>
+      </tr>
+      <tr>
+        <td>NV</td>
+        <td>8%</td>
+      </tr>
+        <tr>
+        <td>UT</td>
+        <td>6.65%</td>
+      </tr>
+      <tr>
+        <td>AL</td>
+        <td>4%</td>
+      </tr>
+    </table>
+  </div>
+  <div class="column">
+    <h2>Descuentos</h2>
+
+    <table>
+      <tr>
+        <th>Total de orden</th>
+        <th>Tasa de descuento</th>
+      </tr>
+      <tr>
+        <td>1000</td>
+        <td>3%</td>
+      </tr>
+      <tr>
+        <td>3000</td>
+        <td>5%</td>
+      </tr>
+      <tr>
+        <td>7000</td>
+        <td>7%</td>
+      </tr>
+        <tr>
+        <td>10000</td>
+        <td>10%</td>
+      </tr>
+      <tr>
+        <td>30000</td>
+        <td>15%</td>
+      </tr>
+    </table>
+  </div>
+</div>
+    <br>
+    <form id="mult-form">
+      <label for="cantidad">cantidad:</label>
+      <input type="number" id="cantidad" /> <br>
+      <label for="precio">precio:</label>
+      <input type="number" id="precio" /><br>
+
+      <label for="select-state">ESTADO</label><br>
+      <select name="select-state" id="select-state">
+      <option value="CA">CA</option>
+    <option value="TX" >TX</option>
+    <option value="NV">NV</option>
+    <option value="AL">AL</option>
+    <option value="UT">UT</option>
+
+
+      </select>
+      <br><br>
+      <input type="submit" value="ok" /> <br>
+
+
+    </form>
+    <div id="recibo-div"></div>
+
+    <div id="resultado-div"></div>
+    <div id="descuento-div"></div>
+
+
+    <script type="module" src="./src/presenter.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,32 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Saludator by Gabriel Balderrama</h1>
+
+
+<label id="label-lan" >Idioma / language:</label>
+
+<select id="select-language" name="lan-list" required>
+  <option value="espanol" >espanol</option>
+  <option value="english">english</option>
+</select>
+
+    <form id="name-form">
+        <label  id="gender-label"> Genero / Gender</label>
+        <select id="select-gender" form="name-form" required >
+          <option value="male" id="optionMale" >hombre</option>
+          <option value="female" id="optionFemale"> mujer</option>
+        </select>
+        <br>
+
+      <label for="name" id="label">ingrese su nombre: </label>
+      <input type="text" id="name" />
+      <input type="submit" value="ok" />
+    </form>
+
+    <br>
+    <div id="resultado-div"></div>
+    <script type="module" src="./src/presenter.js"></script>
+  </body>
+</html>
